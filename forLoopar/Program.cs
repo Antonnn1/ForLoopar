@@ -10,6 +10,8 @@ namespace forLoopar
     {
         static void Main(string[] args)
         {
+            //ovn1 
+            for (int i = 0; i <= 100; i++) { Console.WriteLine(i); }
         }
     }
 }
