@@ -88,6 +88,8 @@ namespace forLoopar
 
              }
              */
+
+            /*
             //Övn 2.6
             Console.WriteLine("Ange ett tal: ");
             int inmatat = int.Parse(Console.ReadLine());
@@ -99,6 +101,25 @@ namespace forLoopar
                     break;
                 }
             }
+            */
+
+            //Övn 2.7
+            Console.Write("Ange ett heltal ");
+            int inmatat = int.Parse(Console.ReadLine());
+            bool flag = false;
+
+            for (int i = 3; i < inmatat; i++)
+            {
+                if (inmatat % i == 0)     
+                {
+                    Console.WriteLine("¨Talet är INTE ett primtal");
+                    flag = true;
+                    break;
+                }
+            }
+
+            if (!flag)
+                Console.WriteLine("Talet är ett primtal!");
 
 
 
