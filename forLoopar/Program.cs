@@ -63,6 +63,8 @@ namespace forLoopar
                 Console.WriteLine("Inga tal hittades...");
             }
             */
+
+            /*
             //Övn 2.5
             Console.WriteLine("Mata in ett heltal: ");
             int inmatat = int.Parse(Console.ReadLine());
@@ -85,6 +87,20 @@ namespace forLoopar
                }
 
              }
+             */
+            //Övn 2.6
+            Console.WriteLine("Ange ett tal: ");
+            int inmatat = int.Parse(Console.ReadLine());
+            for (double i = 0; i < inmatat; i+= 0.1)
+            {
+                if ((inmatat - i * i * i) < 0.1)
+                {
+                    Console.WriteLine("Kubikroten av " + inmatat + " är " + i);
+                    break;
+                }
+            }
+
+
 
         }
     }
